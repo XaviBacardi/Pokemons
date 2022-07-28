@@ -1,0 +1,27 @@
+
+<div class="page-header">
+    <h1 class="text-white">{{pokemon[0].name}}</h1>
+</div>
+<div class="container text-center">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 text-center">
+            <div class="card" style="width: 20rem;">
+                <img class="img-responsive" [src]="pokemon[0].sprites.front_default" alt="Pokemon">
+                <div class="card-body" style="background-color: #C2C2CA;">
+                  <h5 class="card-title"> Especie {{ pokemon[0].species.name }}</h5>
+                  <p class="card-text">Este es un poquemon tipo:  {{ pokemon[0].types[0].type.name }}</p>
+                  <p class="card-text">Especialidad: Ataque  {{ pokemon[0].moves[0].move.name }}</p>
+                  <p class="card-text">Experiencia base: {{pokemon[0].base_experience}} Estado Base: {{pokemon[0].stats[0].base_stat}}</p>
+                  <p class="card-text">Defensa: {{pokemon[0].stats[0].effort}}</p>
+                  <p class="card-text">Peso: {{pokemon[0].weight}}</p>
+                  <p class="card-text">Altura: {{pokemon[0].height}}</p>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4"></div>
+       
+          
+    </div>
+</div>
+

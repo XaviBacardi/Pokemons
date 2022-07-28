@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+
+    background-color: #002739;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.img-responsive{
+    width: 100%;
+}
+.ngx-pagination{
+    color: white;
+}

@@ -1,0 +1,31 @@
+.pokemon-view{
+
+    display: grid;
+    grid-gap: 16px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(23%, 1fr));
+
+}
+
+.pokemon-view .cajita{
+    width: 100%;
+    height: 300px;
+    box-shadow: 1px 2px 5px rgba(0,0, 0, 0.3);
+    display: grid;
+    text-align: center;
+}
+
+.pokemon-view .cajita img{
+    max-width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/*CONTROLES DE PAGINACION*/
+
+pagination-controls{
+
+    text-align: center;
+
+}

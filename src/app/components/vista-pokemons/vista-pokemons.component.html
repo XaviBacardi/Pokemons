@@ -1,0 +1,24 @@
+<div class="page-header">
+    <h1 class="text-white">Mi Pokedex</h1>
+</div>
+<div class="row">
+    <div class="col-md-3 my-2" *ngFor="let pokemon of pokemons | paginate: {itemsPerPage: 10, currentPage: page, totalItems: totalPokemons}">
+        <div class="card" style="width: 18rem;">
+            <img class="img-responsive" [src]="pokemon.sprites.front_default" alt="Pokemon">
+            <div class="card-body text-center" style="background-color: #C2C2CA;">
+              <h5 class="card-title"> {{ pokemon.name }}</h5>
+              <p></p>
+              <a [routerLink]="['/pokemon',pokemon.id]" class="btn btn-primary">Mas detalles de {{ pokemon.name }}</a>
+            </div>
+          </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<pagination-controls (pageChange) ="page = $event; pokemons = []; getPokemons()"></pagination-controls>
